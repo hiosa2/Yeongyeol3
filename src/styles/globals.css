@@ -1,0 +1,439 @@
+@custom-variant dark (&:is(.dark *));
+
+/* HelloTalk Design System v1.0.0 */
+/* Analyzed from: https://www.hellotalk.com/ko */
+
+:root {
+  /* Font Size */
+  --font-size: 16px;
+  
+  /* Brand Colors - Primary Purple */
+  --brand-purple: #7D58FF;
+  --brand-purple-variant: #7A54FF;
+  
+  /* Text Colors */
+  --text-primary: #1B1B1E;
+  --text-secondary: #151515;
+  --text-black: #000000;
+  
+  /* Background Colors */
+  --bg-white: #FFFFFF;
+  --bg-light-gray: #F7F7F7;
+  --bg-gray: #E8E9ED;
+  
+  /* Border Colors */
+  --border-gray: #E0E0E0;
+  
+  /* Accent Colors */
+  --accent-blue: #6496FF;
+  --accent-pink: #FF96C8;
+  --accent-yellow: #FFC864;
+  --accent-green: #32C896;
+  --accent-red: #FF5064;
+  
+  /* Spacing Scale */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 20px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 72px;
+  --spacing-4xl: 80px;
+  --spacing-5xl: 120px;
+  --spacing-6xl: 160px;
+  
+  /* Border Radius */
+  --radius-none: 0px;
+  --radius-full: 9999px;
+  --radius-card: 24px;
+  
+  /* Typography - Font Sizes */
+  --text-h1: 54px;
+  --text-h1-line-height: 54px;
+  --text-h2: 42px;
+  --text-h2-line-height: 48px;
+  --text-h3: 32px;
+  --text-h3-line-height: 40px;
+  --text-h4: 18px;
+  --text-h4-line-height: 18px;
+  --text-body: 16px;
+  --text-body-line-height: 24px;
+  --text-body-large: 18px;
+  --text-body-large-line-height: 28px;
+  --text-small: 14px;
+  --text-small-line-height: 20px;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  
+  /* Font Families */
+  --font-heading: "Gellix-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Oxygen-Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  
+  /* Animation */
+  --duration-fast: 0.15s;
+  --duration-normal: 0.3s;
+  --duration-slow: 0.5s;
+  --easing-default: ease;
+  --transition-default: all 0.3s ease;
+  --transition-fast: all 0.15s ease;
+  --transition-slow: all 0.5s ease;
+  
+  /* Layout */
+  --container-max-width: 1200px;
+  --content-max-width: 1000px;
+  --text-max-width: 800px;
+  
+  /* Component Variables */
+  --button-padding-primary: 8px 28px;
+  --button-padding-large: 11px 18px;
+  --button-padding-xlarge: 14px 32px;
+  --card-padding: 32px;
+  --avatar-size: 80px;
+  --flag-size: 32px;
+  
+  /* ShadCN Compatibility Variables */
+  --background: #FFFFFF;
+  --foreground: #1B1B1E;
+  --card: #FFFFFF;
+  --card-foreground: #1B1B1E;
+  --popover: #FFFFFF;
+  --popover-foreground: #1B1B1E;
+  --primary: #7D58FF;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F7F7F7;
+  --secondary-foreground: #1B1B1E;
+  --muted: #E8E9ED;
+  --muted-foreground: #151515;
+  --accent: #6496FF;
+  --accent-foreground: #FFFFFF;
+  --destructive: #FF5064;
+  --destructive-foreground: #FFFFFF;
+  --border: #E0E0E0;
+  --input: transparent;
+  --input-background: #F7F7F7;
+  --switch-background: #E8E9ED;
+  --ring: #7D58FF;
+  --chart-1: #7D58FF;
+  --chart-2: #6496FF;
+  --chart-3: #FF96C8;
+  --chart-4: #FFC864;
+  --chart-5: #32C896;
+  --radius: 9999px;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1B1B1E;
+  --sidebar-primary: #7D58FF;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F7F7F7;
+  --sidebar-accent-foreground: #1B1B1E;
+  --sidebar-border: #E0E0E0;
+  --sidebar-ring: #7D58FF;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* HelloTalk Brand Colors */
+  --color-brand-purple: var(--brand-purple);
+  --color-brand-purple-variant: var(--brand-purple-variant);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-bg-white: var(--bg-white);
+  --color-bg-light-gray: var(--bg-light-gray);
+  --color-bg-gray: var(--bg-gray);
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-pink: var(--accent-pink);
+  --color-accent-yellow: var(--accent-yellow);
+  --color-accent-green: var(--accent-green);
+  --color-accent-red: var(--accent-red);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+}
+
+/**
+ * HelloTalk Typography System
+ * Base typography with HelloTalk design system styles
+ */
+@layer base {
+  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
+    h1 {
+      font-size: var(--text-h1);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--text-h1-line-height);
+      font-family: var(--font-heading);
+      color: var(--text-primary);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    h2 {
+      font-size: var(--text-h2);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--text-h2-line-height);
+      font-family: var(--font-heading);
+      color: var(--text-primary);
+    }
+
+    h3 {
+      font-size: var(--text-h3);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--text-h3-line-height);
+      font-family: var(--font-heading);
+      color: var(--text-primary);
+    }
+
+    h4 {
+      font-size: var(--text-h4);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--text-h4-line-height);
+      color: var(--text-secondary);
+    }
+
+    p {
+      font-size: var(--text-body);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--text-body-line-height);
+    }
+
+    label {
+      font-size: var(--text-body);
+      font-weight: var(--font-weight-semibold);
+      line-height: var(--text-body-line-height);
+    }
+
+    button {
+      font-size: var(--text-body-large);
+      font-weight: var(--font-weight-semibold);
+      line-height: var(--text-body-large-line-height);
+      transition: var(--transition-default);
+    }
+
+    input {
+      font-size: var(--text-body);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--text-body-line-height);
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+/* HelloTalk Utility Classes */
+@layer utilities {
+  .btn-primary {
+    background-color: var(--brand-purple);
+    color: var(--bg-white);
+    border-radius: var(--radius-full);
+    padding: 8px 28px;
+    font-size: var(--text-body-large);
+    font-weight: var(--font-weight-semibold);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-default);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--brand-purple-variant);
+    transform: translateY(-2px);
+  }
+  
+  .btn-large {
+    background-color: var(--brand-purple-variant);
+    color: var(--bg-white);
+    border-radius: var(--radius-full);
+    padding: 11px 18px;
+    font-size: 20px;
+    font-weight: var(--font-weight-semibold);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-default);
+  }
+  
+  .btn-xlarge {
+    background-color: var(--brand-purple-variant);
+    color: var(--bg-white);
+    border-radius: var(--radius-full);
+    padding: 14px 32px;
+    font-size: 28px;
+    font-weight: var(--font-weight-semibold);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-default);
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--brand-purple);
+    border-radius: var(--radius-full);
+    padding: 8px 28px;
+    font-size: var(--text-body-large);
+    font-weight: var(--font-weight-semibold);
+    border: 2px solid var(--brand-purple);
+    cursor: pointer;
+    transition: var(--transition-default);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--brand-purple);
+    color: var(--bg-white);
+  }
+  
+  .card-hellotalk {
+    background-color: var(--bg-white);
+    border-radius: var(--radius-card);
+    padding: var(--card-padding);
+    box-shadow: none;
+    border: 1px solid var(--bg-gray);
+  }
+  
+  .speech-bubble {
+    background-color: var(--brand-purple);
+    color: var(--bg-white);
+    border-radius: var(--radius-full);
+    padding: 12px 24px;
+    font-size: var(--text-body);
+    font-weight: var(--font-weight-semibold);
+  }
+  
+  .avatar-hellotalk {
+    border-radius: var(--radius-full);
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    object-fit: cover;
+    border: none;
+    background-color: var(--bg-light-gray);
+  }
+  
+  .flag-icon {
+    border-radius: var(--radius-full);
+    width: var(--flag-size);
+    height: var(--flag-size);
+    object-fit: cover;
+    border: 2px solid var(--bg-white);
+  }
+  
+  .section-hero {
+    padding-top: var(--spacing-6xl);
+    padding-bottom: var(--spacing-5xl);
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+  }
+  
+  .section-standard {
+    padding-top: var(--spacing-2xl);
+    padding-bottom: 0;
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+  
+  .section-large {
+    padding-top: var(--spacing-4xl);
+    padding-bottom: 0;
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+  
+  .section-xlarge {
+    padding-top: var(--spacing-5xl);
+    padding-bottom: 0;
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+  }
+  
+  .container-hellotalk {
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+  }
+}
